@@ -21,4 +21,18 @@ public class Trabajadores
     private String regimenPen;
     private String codigoInterno;
     
+    // Atributo de clase para el último código generado
+    private static int ultimoCodigo = 0;
+    
+    // Constructor sin parámetros
+    
+    public Trabajadores() { this.codigoInterno = generarCodigo(); }
+    // Constructor con tipoDocumento "DNI" y régimen laboral "CAS"
+    
+    public Trabajadores(String numeroDocumento) {
+    this.tipoDoc = "DNI"; this.regimenLab = "CAS"; this.NDoc = numeroDocumento; this.codigoInterno = generarCodigo();}
+    
+    // Método de clase para generar código correlativo
+    private static String generarCodigo() {ultimoCodigo++; return String.format("T%05d", ultimoCodigo); }
+    
 }
