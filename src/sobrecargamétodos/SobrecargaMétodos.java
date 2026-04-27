@@ -28,6 +28,24 @@ public class SobrecargaMétodos {
         trabajador1.setRegimenLaboral("CAS");
         trabajador1.setRegimenPensionario("AFP");
         
+          // Crear un trabajador usando el constructor que inicializa tipoDocumento y regimenLaboral
+        Trabajadores trabajador2 = new Trabajadores("60212168");
+        trabajador2.setApellidoPaterno("Lopez");
+        trabajador2.setApellidoMaterno("Ramirez");
+        trabajador2.setNombres("Ana");
+        trabajador2.setCelular("911982394");
+        trabajador2.setCorreo("ana.lopez@gmail.com");
+        trabajador2.setRegimenPensionario("ONP");
+        
+        Trabajadores trabajador3 = new Trabajadores("60212168");
+        trabajador3.setApellidoPaterno("Servantes");
+        trabajador3.setApellidoMaterno("Romero");
+        trabajador3.setNombres("Miguel");
+        trabajador3.setCelular("901922391");
+        trabajador3.setCorreo("ana.lopez@gmail.com");
+        trabajador3.setRegimenPensionario("ONP");
+        
+        
         
     }
     
